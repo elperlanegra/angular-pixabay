@@ -11,14 +11,14 @@ export class BuscarImagenComponent implements OnInit {
 
   constructor(private _imagenService: ImagenService) {
     this.nombreImagen = '';
-   }
+  }
 
   ngOnInit(): void {
   }
 
   buscarImagenes() {
-    
-    if(this.nombreImagen === '') {
+
+    if (this.nombreImagen === '') {
       this._imagenService.setError('Agrega un texto de busqueda');
       return;
     }
